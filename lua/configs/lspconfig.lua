@@ -32,18 +32,7 @@ lspconfig.gopls.setup({
     },
   },
 })
--- lspconfig.gopls.setup({
---   on_attach = on_attach,
---   settings = {
---     gopls = {
---       analyses = {
---         unusedparams = true,
---       },
---       staticcheck = true,
---     },
---   },
--- })
---
+
 -- Configure Python language server
 lspconfig.pyright.setup({
   on_attach = on_attach,
@@ -68,12 +57,6 @@ lspconfig.html.setup({
 lspconfig.ts_ls.setup({
   on_attach = on_attach,
 })
--- configuring single server, example: typescript
--- lspconfig.ts_ls.setup {
---   on_attach = nvlsp.on_attach,
---   on_init = nvlsp.on_init,
---   capabilities = nvlsp.capabilities,
-
 
 -- -- EXAMPLE
 -- local servers = { "html", "cssls"}
